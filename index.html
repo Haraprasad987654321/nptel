@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Certificate</title>
+
+<style>
+
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:#f2f2f2;
+font-family:Arial;
+}
+
+button{
+background:#3b6cb7;
+color:white;
+border:none;
+padding:15px 30px;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#2a4f8f;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button onclick="downloadCertificate()">
+Course Certificate
+</button>
+
+<script>
+
+function downloadCertificate(){
+
+var link=document.createElement('a');
+
+link.href="https://raw.githubusercontent.com/Haraprasad987654321/nptel/main/certificate.pdf";
+
+link.download="certificate.pdf";
+
+document.body.appendChild(link);
+
+link.click();
+
+document.body.removeChild(link);
+
+}
+
+</script>
+
+</body>
+</html>
