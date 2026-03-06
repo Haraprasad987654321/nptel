@@ -4,7 +4,6 @@
 <title>Course Certificate</title>
 
 <style>
-
 body{
 display:flex;
 justify-content:center;
@@ -14,49 +13,27 @@ background:#f2f2f2;
 font-family:Arial;
 }
 
-button{
+.download-btn{
 background:#3b6cb7;
 color:white;
-border:none;
 padding:15px 30px;
 font-size:18px;
 border-radius:6px;
-cursor:pointer;
+text-decoration:none;
 }
 
-button:hover{
+.download-btn:hover{
 background:#2a4f8f;
 }
-
 </style>
 
 </head>
 
 <body>
 
-<button onclick="downloadCertificate()">
-Course Certificate
-</button>
-
-<script>
-
-function downloadCertificate(){
-
-var link=document.createElement('a');
-
-link.href="https://github.com/Haraprasad987654321/nptel/blob/main/NPTEL25CS107S1358700458.pdf";
-
-link.download="certificate.pdf";
-
-document.body.appendChild(link);
-
-link.click();
-
-document.body.removeChild(link);
-
-}
-
-</script>
+<a class="download-btn" href="NPTEL25CS107S1358700458.pdf" download>
+Download Certificate
+</a>
 
 </body>
 </html>
